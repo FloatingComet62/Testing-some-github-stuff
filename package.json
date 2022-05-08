@@ -1,0 +1,13 @@
+{
+  "name": "testing-github-stuff",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node src/test.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
