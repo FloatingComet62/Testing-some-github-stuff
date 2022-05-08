@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  TEST: ${{ secrets.TEST }}
+
 jobs:
   build:
 
@@ -20,9 +23,6 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - shell: bash
-      env:
-        TEST: ${{ secrets.TEST }}
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
